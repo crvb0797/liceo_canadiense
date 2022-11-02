@@ -26,3 +26,22 @@
 .header ul li{
     font-size: 1em;
 }
+
+/* NAVBAR */
+.nav_links ul{
+    margin: 0;
+}
+
+.nav_links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.nav_links ul .active{
+    color: var(--primary-color);
+}
+
+.nav_links ul .nav_link{
+    font-size: 1.5625ems;
+}
