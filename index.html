@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Liceo Canadiense | Educación a distancia</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <!-- FONTAWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- STYLE CUSTOM -->
     <link rel="stylesheet" href="./assets/estilos.css">
     <link rel="shortcut icon" href="./assets/img/logo_1.png" type="image/x-icon">
-  </head>
+</head>
 
-  <body class="">
+<body class="">
     <!-- HEADER -->
     <header class="header d-flex justify-content-between align-items-center text-white py-2">
-      <h1 class="fw-bold m-0">Educación a distancia y Educación para empresas</h1>
+        <h1 class="fw-bold m-0">Educación a distancia y Educación para empresas</h1>
 
         <ul class="d-flex justify-content-between align-items-center m-0">
-            <li class="mx-3"><i class="fa-solid fa-phone"></i> 5555 - 5555</li>
+            <li class="mx-3"><i class="fa-solid fa-phone"></i> 2375 - 0061</li>
             <li class="mx-3"><i class="fa-solid fa-envelope"></i> hola@liceocanadiense.edu.gt</li>
             <li class="mx-2"><a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a></li>
             <li class="mx-2"><a class="text-white" href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -43,29 +39,50 @@
             <div class="logo">
                 <img src="./assets/img/logo_02.png" alt="Logo Liceo Canadiense">
             </div>
-    
+
             <div class="nav_links">
                 <ul class="d-flex justify-content-between align-items-center">
                     <li class="nav_link mx-3"><a class="active" href="#">Inicio</a></li>
                     <li class="nav_link mx-3"><a href="#">Sobre Nosotros</a></li>
-                    <li class="nav_link mx-3"><a href="#">Planes</a></li>
+                    <li class="nav_link mx-3"><a href="#">Niveles</a></li>
                     <li class="nav_link mx-3"><a href="#">Encuentranos</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <!-- SCRIPTS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
+    <!-- CONTENT_MAIN -->
+    <div class="main row">
+        <img class="line_bg position-absolute" src="./assets/img/bg_line.png" alt="Linea de fondo">
+        <div class="main__info col-7" data-aos="fade-up-right">
+            <h2 class="main__text">Alcanza tus metas con educación a distancia</h2>
+            <a href="#" class="btn btn-lg mt-5 main__button">Más información</a>
+        </div>
+        <div class="main__image col" data-aos="fade-up-left">
+            <img class="gb" src="./assets/img/BG.png" alt="Fondo de graduando">
+            <img class="photo" src="./assets/img/graduando.png" alt="graduando">
+        </div>
+    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            duration: 1000,
+            once: true,
+            delay: 400,
+        });
+    </script>
+</body>
+
 </html>

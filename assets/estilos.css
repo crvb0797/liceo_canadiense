@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
         --primary-color: #FF2D37;
+        --secondary-color: #03103B;
 }
 
 *{
     list-style: none;
     font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -44,4 +49,51 @@
 
 .nav_links ul .nav_link{
     font-size: 1.5625ems;
+}
+
+/* MAIN CONTENT */
+.main{
+    height: 100vh;
+}
+
+.line_bg{
+    z-index: -1;
+    top: -124px;
+}
+
+.main__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6.25em;
+}
+.main__text{
+    font-size: 5em;
+    line-height: 120px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.main__button{
+    background: var(--primary-color) !important;
+    color: white;
+}
+
+.main .main__image{
+    position: relative;
+}
+
+.main .main__image img{
+    width: 600px;
+    position: absolute;
+    right: 0;
+}
+
+.main .main__image .photo{
+    position: absolute;
+    width: 600px;
+    right: 40px;
+    top: -19px;
+    width: 550px;
 }
