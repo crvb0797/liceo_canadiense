@@ -53,7 +53,8 @@ body{
 
 /* MAIN CONTENT */
 .main{
-    height: 100vh;
+    height: 80vh;
+    margin-bottom: 82px;
 }
 
 .line_bg{
@@ -67,6 +68,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     margin-left: 6.25em;
+    max-width: 1200px;
 }
 .main__text{
     font-size: 5em;
@@ -96,4 +98,51 @@ body{
     right: 40px;
     top: -19px;
     width: 550px;
+}
+
+/* ABOUT US */
+
+.about_us{
+    border: 1px red solid;
+}
+
+.wraper{
+    width: full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+}
+
+.badge .image__badge{
+    position: absolute;
+    top: -55px;
+}
+
+.badge .title__badge{
+    font-size: 30px;
+}   
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1440px) {
+    .main{
+        margin-bottom: 150px;
+    }
+
+    .main .main__info{
+        max-width: 800px;
+    }
 }
