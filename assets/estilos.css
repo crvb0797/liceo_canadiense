@@ -3,59 +3,54 @@
 /* FOLD */
 @media (max-width: 280px){
     .nav{
-        margin: 0.5em !important;
+        margin: 0.5em;
     }
 
     .nav .container-fluid .navbar-brand img{
-        width: 120px !important;
+        width: 120px;
     }
 
     .header{
-        display: none !important;
+        display: none;
     }
 }
+
+@media (max-width: 425px){
+    .nav{
+        margin: 0.5em;
+    }
+
+    .nav .container-fluid .navbar-brand img{
+        width: 120px;
+    }
+
+    .header{
+        display: none;
+    }
+}
+
+
 
 /* Celular */
 
 @media (max-width: 768px) {
     .nav{
-        margin: 2em !important;
+        margin: 2em;
     }
 
     .nav .container-fluid .navbar-brand img{
         width: 200px;
     }
-
-    header .header_wrapper h1{
-        font-size: 12px;
-        margin: 0 !important;
-    }
 }
 
 /* Tableta */
 
-@media (max-width: 1130px) {
+@media (max-width: 1024px) {
     header .header_wrapper{
-        justify-content: center !important;
-    }
-
-    .header .header_wrapper h1{
-        margin: 0 !important;
+        justify-content: center;
     }
     
-    header .list_contact{
-        display: none !important;
-    }
-}
-
-/* Portatil L */
-
-@media (max-width: 1440px) {
-    .main{
-        margin-bottom: 150px;
-    }
-
-    .main .main__info{
-        max-width: 800px;
+    header .header_wrapper .list_contact{
+        display: none;
     }
 }

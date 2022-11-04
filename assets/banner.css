@@ -1,15 +1,52 @@
 /* MAIN CONTENT */
 .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 80vh;
     width: 100%;
-    height: 800px;
     background-image: url(./img/Background-page.svg);
-    background-position: 230% 39%;
     background-repeat: no-repeat;
+    background-position-x: 300%;
+    background-position-y: 50%;
+}
+
+.main__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6.25em;
+    max-width: 1200px;
+    color: var(--secondary-color);
+}
+
+.main__info h2{
+    font-size: 5em;
+}
+
+.main__button{
+    background: var(--primary-color);
+    color: white;
+    margin-top: 2em;
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #f54d4d;
+    transition: all 300ms;
+}
+
+.main__button:hover{
+    box-shadow: 1px 1px 30px -6px #f54d4d;
 }
 
 .main .main__photo{
-    margin-right: 6.25em !important;
+    margin-right: 6.25em;
 }
 
 .main .main__photo .image1{
@@ -21,14 +58,9 @@
     z-index: 1;
 }
 
-
-.main__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 6.25em;
-    max-width: 1200px;
+.main .main__photo .bg{
+    z-index: 0;
+    position: absolute;
 }
 
 .main__info .main__text{
@@ -38,7 +70,66 @@
     color: var(--secondary-color);
 }
 
-.main__button{
-    background: var(--primary-color) !important;
-    color: white;
+@media  screen and (max-width: 1440px) {
+    .main{
+        background-position-x: -100%;
+        background-position-y: 50%;
+    }
+
+    .main__info h2{
+        font-size: 3.5em;
+    }
+
+    .main .main__photo .image1{
+        width: 42em;
+     }
+}
+
+
+@media  screen and (max-width: 1024px) {
+    .main{
+        background-image: url(./img/bg_line.png);
+        background-position: center;
+        justify-content: center;
+    }
+
+    .main__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .main__info h2{
+        font-size: 5em;
+        text-align: center;
+    }
+
+    .main__button{
+        font-size: 25px;
+    }
+
+    .main .main__photo{
+        display: none;
+     }
+}
+
+@media  screen and (max-width: 425px) {
+    .main{
+        height: auto;
+    }
+    .main__info h2{
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .main__button{
+        font-size: 1em;
+        padding: 18px 50px;
+    }
+
+    .main .main__photo .image1{
+        display: none;
+     }
 }

@@ -4,12 +4,40 @@
     background-color: var(--primary-color);
 }
 
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.header_wrapper .list_contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_wrapper .list_contact li{
+    margin-right: 1.2em;
+}
+
+.header_wrapper .list_contact li>a{
+    color: white;
+    font-size: 1em;
+}
+
 .header h1{
     font-size: 1em;
-    margin-left: 6.25em !important;
+    margin-left: 6.25em;
 }
 
 .header ul{
-    margin-right: 6.25em !important;
+    margin-right: 6.25em;
 }
 
+@media screen and (max-width: 768px) {
+    header .header_wrapper h1{
+        margin-left: 0;
+    }
+}
