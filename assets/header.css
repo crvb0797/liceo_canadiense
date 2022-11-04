@@ -1,0 +1,15 @@
+/* Header */
+
+.header{
+    background-color: var(--primary-color);
+}
+
+.header h1{
+    font-size: 1em;
+    margin-left: 6.25em !important;
+}
+
+.header ul{
+    margin-right: 6.25em !important;
+}
+

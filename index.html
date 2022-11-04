@@ -5,51 +5,76 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Liceo Canadiense | Educación a distancia y para empresas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- STYLE CUSTOM -->
     <link rel="stylesheet" href="./assets/estilos.css">
+    <link rel="stylesheet" href="./assets/global.css">
+    <link rel="stylesheet" href="./assets/header.css">
+    <link rel="stylesheet" href="./assets/navbar.css">
+    <link rel="stylesheet" href="./assets/banner.css">
+    <link rel="stylesheet" href="./assets/about_us.css">
+
+    <!-- Logo -->
     <link rel="shortcut icon" href="./assets/img/logo_1.png" type="image/x-icon">
 </head>
 
 <body class="">
     <!-- HEADER -->
-    <header class="header d-flex justify-content-between align-items-center text-white py-2">
-        <h1 class="fw-bold m-0">Educación a distancia y Educación para empresas</h1>
+    <header class="header">
+        <div class="header_wrapper d-flex justify-content-between align-items-center text-white py-2">
+            <h1 class="fw-bold m-0">Educación a distancia y Educación para empresas</h1>
 
-        <ul class="d-flex justify-content-between align-items-center m-0">
-            <li class="mx-3"><i class="fa-solid fa-phone"></i> 2375 - 0061</li>
-            <li class="mx-3"><i class="fa-solid fa-envelope"></i> hola@liceocanadiense.edu.gt</li>
-            <li class="mx-2"><a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="mx-2"><a class="text-white" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-        </ul>
+            <ul class="list_contact d-flex justify-content-between align-items-center m-0">
+                <li class="mx-3"><i class="fa-solid fa-phone"></i> 2375 - 0061</li>
+                <li class="mx-3"><i class="fa-solid fa-envelope"></i> hola@liceocanadiense.edu.gt</li>
+                <li class="mx-2"><a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="mx-2"><a class="text-white" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- Navbar -->
-    <div class="container mt-2">
-        <nav class="d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img src="./assets/img/logo_02.png" alt="Logo Liceo Canadiense">
-            </div>
+    <nav class="nav navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"> <img src="./assets/img/logo_02.png" alt="Logo Liceo Canadiense"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="nav_links">
-                <ul class="d-flex justify-content-between align-items-center">
-                    <li class="nav_link mx-3"><a class="active" href="#">Inicio</a></li>
-                    <li class="nav_link mx-3"><a href="#">Sobre Nosotros</a></li>
-                    <li class="nav_link mx-3"><a href="#">Niveles</a></li>
-                    <li class="nav_link mx-3"><a href="#">Encuentranos</a></li>
+            <!-- NAVLINKS -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Niveles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Encuentranos</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </div>
+
+
+        </div>
+    </nav>
 
     <!-- CONTENT_MAIN -->
     <div class="main d-flex justify-content-between">
@@ -66,19 +91,19 @@
 
 
     <!-- SOBRE NOSOTROS -->
-    <section class="about_us mt-4">
+    <!-- <section class="about_us mt-4">
         <div class="wraper">
             <div class="badge">
                 <picture class="image__badge">
                     <img src="./assets/img/about_me.png" alt="">
                 </picture>
-    
+
                 <div class="title__badge">
                     <p class="m-0">Sobre nosotros</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

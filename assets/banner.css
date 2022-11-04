@@ -1,0 +1,48 @@
+/* MAIN CONTENT */
+.main{
+    height: 80vh;
+    margin-bottom: 82px;
+}
+
+.line_bg{
+    z-index: -1;
+    top: -124px;
+}
+
+.main__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6.25em;
+    max-width: 1200px;
+}
+.main__text{
+    font-size: 5em;
+    line-height: 120px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.main__button{
+    background: var(--primary-color) !important;
+    color: white;
+}
+
+.main .main__image{
+    position: relative;
+}
+
+.main .main__image img{
+    width: 600px;
+    position: absolute;
+    right: 0;
+}
+
+.main .main__image .photo{
+    position: absolute;
+    width: 600px;
+    right: 40px;
+    top: -19px;
+    width: 550px;
+}

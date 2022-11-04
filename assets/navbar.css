@@ -1,0 +1,19 @@
+/* NAVBAR */
+.nav{
+    margin-left: 6.25em !important;
+    margin-right: 6.25em !important;
+}
+
+.nav .container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.nav .navbar-nav .nav-item .active{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.nav .navbar-nav .nav-item:hover {
+    color: var(--secondary-color);
+}
