@@ -143,11 +143,8 @@
 .caption-style-4 .caption-text{
     z-index: 10;
     color: #fff;
-    position: absolute;
-    width: 400px;
-    height: 300px;
+    width: 100%;
     text-align: center;
-    top:100px;
 }
 
 
@@ -156,6 +153,12 @@
     .wrapper_about_us .numbers_about_us .counter_container{
         font-size: 1.5em;
     }
+
+    .grid_container_about_us {
+        display: grid;
+        gap: 2;
+        grid-template-columns: repeat(2, minmax(16rem, 1fr));
+      }
 }
 
 @media screen and (max-width: 768px) {
@@ -179,7 +182,7 @@
     .grid_container_about_us {
         display: grid;
         gap: 2;
-        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-template-columns: repeat(1, minmax(16rem, 1fr));
       }
 }
 
