@@ -97,3 +97,22 @@
         font-size: 1.4em;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .about_us_container{
+        margin-top: 6em;
+    }
+
+    .badge .title__badge{
+        font-size: 1.5em;
+        font-weight: bold;
+    }   
+
+    .badge .image__badge img{
+        width: 3.75em;
+    }
+
+    .wrapper_about_us .numbers_about_us .counter_container{
+        font-size: 1em;
+    }
+}
