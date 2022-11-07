@@ -70,6 +70,12 @@
 
 
 /* Responsive */
+@media screen and (max-width: 1500px) {
+    .wrapper_about_us .numbers_about_us .counter_container{
+        font-size: 1.5em;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about_us_container{
         margin-top: 2em;
