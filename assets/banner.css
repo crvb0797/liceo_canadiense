@@ -70,7 +70,7 @@
     color: var(--secondary-color);
 }
 
-@media  screen and (max-width: 1440px) {
+@media  screen and (max-width: 1500px) {
     .main{
         background-position-x: -100%;
         background-position-y: 50%;
