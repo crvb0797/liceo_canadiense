@@ -15,7 +15,6 @@ $('.counting').each(function() {
       },
       complete: function() {
         $this.text(this.countNum);
-        //alert('finished');
       }
   
     });  
