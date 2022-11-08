@@ -64,6 +64,7 @@
     text-align: center;
     padding: 0 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -108,6 +109,11 @@
     border-radius: 20px;
 }
 
+
+.click_me img{
+    width: 50px;
+    display: none;
+}
 /* Responsive */
 
 @media screen and (max-width: 768px) {
@@ -117,5 +123,9 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .click_me img{
+        display: inline;
     }
 }
