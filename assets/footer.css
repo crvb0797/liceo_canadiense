@@ -1,0 +1,60 @@
+/* Container */
+.footer{
+    margin-top: 6em;
+}
+
+/* Social */
+.social__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 3em;
+}
+
+.social__icons ul li a .social__icon_facebook, .social__icons ul li a .social__icon_instagram{
+    width: 4.5em;
+}
+
+
+/* Copy */
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primary);
+    color: white;
+}
+
+.copy__text{
+    font-size: 1em;
+    opacity: 0.8;
+    margin: 1em auto;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .copy__text{
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .copy__text{
+        font-size: 0.3em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .copy__text{
+        font-size: 0.1em;
+        text-align: center;
+    }
+}

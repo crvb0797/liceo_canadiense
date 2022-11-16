@@ -2,6 +2,7 @@
 :root{
         --primary-color: #FF2D37;
         --secondary-color: #03103B;
+        --bg-primary: #616161;
 }
 
 *{
