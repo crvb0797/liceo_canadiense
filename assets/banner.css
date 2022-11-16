@@ -70,6 +70,21 @@
     color: var(--secondary-color);
 }
 
+@media  screen and (max-width: 1700px) {
+    .main{
+        background-position-x: -100%;
+        background-position-y: 50%;
+    }
+
+    .main__info h2{
+        font-size: 3em;
+    }
+
+    .main .main__photo .image1{
+        width: 42em;
+     }
+}
+
 @media  screen and (max-width: 1500px) {
     .main{
         background-position-x: -100%;
