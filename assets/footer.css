@@ -1,60 +1,97 @@
 /* Container */
-.footer{
-    margin-top: 6em;
+.footer {
+  margin-top: 6em;
 }
 
 /* Social */
-.social__icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social__icons ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 3em;
+.social__icons ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.social__icons ul li a .social__icon_facebook, .social__icons ul li a .social__icon_instagram{
-    width: 4.5em;
+.social__icons .social-network--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 2em;
+  gap: 3em;
 }
 
+.social__icons .social--card--container li {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  border-radius: 20px;
+  box-shadow: -1px 2px 16px -6px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -1px 2px 16px -6px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -1px 2px 16px -6px rgba(0, 0, 0, 0.51);
+  margin-bottom: 2em;
+}
+
+.social__icons ul li a .social__icon_facebook,
+.social__icons ul li a .social__icon_instagram,
+.social__icons ul li a .social__icon_waze {
+  width: 4.5em;
+}
 
 /* Copy */
-.copy{
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+  color: white;
+}
+
+.copy__text {
+  font-size: 1em;
+  opacity: 0.8;
+  margin: 1em auto;
+}
+
+/* Responsive */
+/* @media screen and (max-width: 2560px) {
+  .social__icons .social--card--container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-primary);
-    color: white;
-}
+    margin-top: 4em;
+    gap: 4em;
+  }
 
-.copy__text{
-    font-size: 1em;
-    opacity: 0.8;
-    margin: 1em auto;
-}
-
-
-/* Responsive */
+  .social__icons ul li a .social__icon_facebook,
+  .social__icons ul li a .social__icon_instagram,
+  .social__icons ul li a .social__icon_waze {
+    width: 4.5em;
+  }
+} */
 @media screen and (max-width: 768px) {
-    .copy__text{
-        font-size: 0.5em;
-    }
+  .copy__text {
+    font-size: 0.5em;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .copy__text{
-        font-size: 0.3em;
-    }
+  .copy__text {
+    font-size: 0.3em;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .copy__text{
-        font-size: 0.1em;
-        text-align: center;
-    }
+  .copy__text {
+    font-size: 0.1em;
+    text-align: center;
+  }
 }
