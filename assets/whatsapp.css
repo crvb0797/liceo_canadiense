@@ -38,7 +38,7 @@
 }
 
 @media screen and (max-width: 545px) {
-    span {
+    .float-button span {
         display: none;
     }
 
