@@ -95,3 +95,19 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 689px) {
+  .social__icons .social--card--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    gap: 10em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .social__icons .social--card--container {
+    gap: 8em;
+  }
+}

@@ -23,3 +23,15 @@
     width: 300px;
 }
 
+@media screen and (min-width: 689px) {
+    .encuentranos--container .encuentranos--container__image{
+        flex-direction: row;
+        gap: 14rem;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+    .encuentranos--container .encuentranos--container__image{
+        gap: 8rem;
+    }
+}
