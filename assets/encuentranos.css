@@ -3,14 +3,10 @@
 }
 
 .encuentranos--container .encuentranos--map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 4em 0.5em;
     min-width: 320px;
     height: 360px;
     border-radius: 8px;
-    background-color: cadetblue;
 }
 
 .encuentranos--container .encuentranos--container__image{
@@ -27,14 +23,3 @@
     width: 300px;
 }
 
-
-/* @media screen and (max-width: 2560px) {
-    .encuentranos--container .encuentranos--map{
-        margin: 6em 6.25em;
-    } 
-
-    .encuentranos--container .encuentranos--container__image{
-        flex-direction: row;
-        gap: 4em;
-    }
-} */

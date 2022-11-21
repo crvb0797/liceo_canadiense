@@ -14,6 +14,10 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
     <!-- STYLE CUSTOM -->
     <link rel="stylesheet" href="./assets/estilos.css">
     <link rel="stylesheet" href="./assets/global.css">
@@ -71,11 +75,19 @@
 
 
     <!-- Whatsapp button -->
-    <div>
+    <!-- <div>
         <title>WhatsApp Responsive Button</title>
         <a class="float-button" target="_blank" href="https://api.whatsapp.com/send?phone=50223750061" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
             <span>¿Alguna duda?<span>
+        </a>
+    </div> -->
+
+    <div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div">
+        <a id="WhatsApp-button" href="https://wa.me/5521980619913" target="_blank" class="phoneJs" title="WhatsApp 360imagem">
+            <div class="cbh-ph-circle"></div>
+            <div class="cbh-ph-circle-fill"></div>
+            <div class="cbh-ph-img-circle1"></div>
         </a>
     </div>
 
@@ -340,8 +352,8 @@
         </div>
 
         <div class="encuentranos--wrapper">
-            <div class="encuentranos--map" data-aos="zoom-out">
-                Mapa
+            <div class="encuentranos--map" id="map" data-aos="zoom-out">
+
             </div>
 
             <div class="encuentranos--container__image">
@@ -375,12 +387,15 @@
                             1</li>
                     </div>
                     <div class="social-network--container">
-                        <li><a target="_blank" href="https://facebook.com"><img class="social__icon_facebook"
-                                    src="./assets/img/facebook.svg" alt="Facebook logo"></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/LiceoCanadienseEducacionADistancia"><img
+                                    class="social__icon_facebook" src="./assets/img/facebook.svg"
+                                    alt="Facebook logo"></a></li>
                         <li><a target="_blank" href="https://instagram.com"><img class="social__icon_instagram"
                                     src="./assets/img/instagram.svg" alt="Instagram logo"></a></li>
-                        <li><a target="_blank" href="https://waze.com"><img class="social__icon_waze"
-                                    src="./assets/img/waze_icon_137034.svg" alt="Waze logo"></a></li>
+                        <li><a target="_blank"
+                                href="https://ul.waze.com/ul?preview_venue_id=176554130.1765672375.5063029&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"><img
+                                    class="social__icon_waze" src="./assets/img/waze_icon_137034.svg"
+                                    alt="Waze logo"></a></li>
                     </div>
                 </ul>
             </div>
@@ -396,19 +411,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Custom JS -->
     <script src="./assets/app.js"></script>
     <script src="./assets/jquery.js"></script>
 
+    <!-- LEAFLET -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+        /* AOS  */
         AOS.init({
             startEvent: 'DOMContentLoaded',
             duration: 1000,
             once: true,
             delay: 400,
         });
+
+        /* LEAFLET */
+        const tilesProvider = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png';
+
+        let myMap = L.map('map', {
+            center: [14.5830143, -90.4989397],
+            zoom: 800,
+            scrollWheelZoom: false,
+        }).setView([14.6332369, -90.577998], 15);
+
+
+        let map = L.tileLayer(tilesProvider, {
+            maxZoom: 18,
+        }).addTo(myMap);
+
+        let iconMarker = L.icon({
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/2642/2642502.png",
+            iconSize: [45, 45],
+            iconAnchor: [30, 60],
+            popupAnchor: [-7, -60],
+        });
+
+        L.marker([14.6332369, -90.577998], {
+                icon: iconMarker
+            }).addTo(myMap)
+            .bindPopup('Sede de educación a distancia')
+            .openPopup();
     </script>
 </body>
 
