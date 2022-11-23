@@ -25,6 +25,24 @@
     border-radius: 10px;
 }
 
+.badge-red{
+    max-width: 20em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+.badge-red .title__badge{
+    font-size: 1.9em;
+    font-weight: bold;
+} 
+
 .badge .image__badge{
     border-radius: 100%;
     position: absolute;
