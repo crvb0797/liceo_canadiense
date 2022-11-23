@@ -157,7 +157,7 @@
 }
 
 .fas {
-    color: #96bd0b;
+    color: var(--primary-color);
 }
 .slick-prev {
     left: 0;
