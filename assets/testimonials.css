@@ -1,99 +1,105 @@
-.testimonials_container{
-    margin: 6em 0;
+.testimonials_container {
+  margin: 6em 0;
 }
 
-.testimonials_container .container{
-    margin-top: 4em;
+.testimonials_container .container {
+  margin-top: 4em;
 }
 
-.testimonial{
-    border: 10px solid var(--secondary-color);
-    padding: 40px 0 25px 0;
-    margin: 6em 6.25em;
-    text-align: center;
-    position: relative;
+.testimonial {
+  border: 10px solid var(--secondary-color);
+  padding: 40px 0 25px 0;
+  margin: 6em 6.25em;
+  text-align: center;
+  position: relative;
 }
-.testimonial:before{
-    content: "\f10d";
-    font-family: "Font Awesome 5 Free";
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    background: #fff;
-    margin: 0 auto;
-    font-size: 70px;
-    font-weight: 900;
-    color: var(--primary-color);
-    position: absolute;
-    top: -60px;
-    left: 0;
-    right: 0;
+.testimonial:before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: #fff;
+  margin: 0 auto;
+  font-size: 70px;
+  font-weight: 900;
+  color: var(--primary-color);
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
 }
-.testimonial .title{
-    padding: 7px 0;
-    margin: 0 -30px 20px;
-    border: 7px solid #fff;
-    background: var(--primary-color);
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
+.testimonial .title {
+  padding: 7px 0;
+  margin: 0 -30px 20px;
+  border: 7px solid #fff;
+  background: var(--primary-color);
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
 }
-.testimonial .title:before{
-    content: "";
-    border-top: 15px solid var(--secondary-color);
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    position: absolute;
-    bottom: -37px;
-    left: 0;
+.testimonial .title:before {
+  content: "";
+  border-top: 15px solid var(--secondary-color);
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  bottom: -37px;
+  left: 0;
 }
-.testimonial .title:after{
-    content: "";
-    border-top: 15px solid var(--secondary-color);
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    position: absolute;
-    bottom: -37px;
-    right: 0;
+.testimonial .title:after {
+  content: "";
+  border-top: 15px solid var(--secondary-color);
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  bottom: -37px;
+  right: 0;
 }
-.testimonial .post{
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: capitalize;
+.testimonial .post {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
 }
-.testimonial .description{
-    padding: 0 20px;
-    margin: 0;
-    font-size: 15px;
-    color: #6f6f6f;
-    letter-spacing: 1px;
-    line-height: 30px;
+.testimonial .description {
+  padding: 0 20px;
+  margin: 0;
+  font-size: 15px;
+  color: #6f6f6f;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
-.owl-theme .owl-controls{ margin-top: 0; }
-.owl-theme .owl-controls .owl-buttons div{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 35px;
-    background: var(--primary-color);
-    color: #fff;
-    border-radius: 0;
-    margin-right: 5px;
-    opacity: 1;
+.owl-theme .owl-controls {
+  margin-top: 0;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 0;
+  margin-right: 5px;
+  opacity: 1;
 }
 .owl-prev:before,
-.owl-next:before{
-    content: "\f060";
-    font-family: "Font Awesome 5 Free";
-    font-size: 20px;
-    font-weight: 900;
+.owl-next:before {
+  content: "\f060";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 900;
 }
-.owl-next:before{ content: "\f061"; }
-@media only screen and (max-width: 990px){
-    .testimonial{ margin: 30px; }
+.owl-next:before {
+  content: "\f061";
+}
+@media only screen and (max-width: 990px) {
+  .testimonial {
+    margin: 30px;
+  }
 }
