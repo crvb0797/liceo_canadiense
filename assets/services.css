@@ -1,131 +1,128 @@
-
 /* Container */
-.services_container{
-    margin-top: 6em;
+.services_container {
+  margin-top: 6em;
 }
 
-
 /* Wrapper */
-.services_container .services_wrapper{
-    margin:4em 6.25em 0 6.25em; 
+.services_container .services_wrapper {
+  margin: 4em 6.25em 0 6.25em;
 }
 
 /* Cards 3D */
-.container__card{
-    margin: auto;
-    perspective: 1000px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.container__card {
+  margin: auto;
+  perspective: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.card__father{
-    margin: 20px;
-    perspective: 1000px;
+.card__father {
+  margin: 20px;
+  perspective: 1000px;
 }
 
-.card__father:hover .card{
-    transform: rotateY(180deg);
+.card__father:hover .card {
+  transform: rotateY(180deg);
 }
 
-.card{
-    width: 350px;
-    height: 400px;
-    position: relative; 
-    transform-style: preserve-3d;
-    transition: all 600ms;
+.card {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
 }
 
 .card__front,
-.card__back{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    border-radius: 20px;
+.card__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px;
 }
 
-.card__front{
-    background-size: cover;
-    background-position: center;
+.card__front {
+  background-size: cover;
+  background-position: center;
 }
 
-.card__back{
-    transform: rotateY(180deg);
-    background-color: white;
+.card__back {
+  transform: rotateY(180deg);
+  background-color: white;
 }
 
-.body__card_front{
-    /* width: 100%; */
-    height: 100%;
-    text-align: center;
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transform: translateZ(60px);
+.body__card_front {
+  /* width: 100%; */
+  height: 100%;
+  text-align: center;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translateZ(60px);
 }
 
-.body__card_back{
-    padding: 40px;
-    text-align: center;
-    transform: translateZ(60px);
+.body__card_back {
+  padding: 40px;
+  text-align: center;
+  transform: translateZ(60px);
 }
 
-.body__card_back p{
-    margin-top: 20px;
-    font-size: 16px;
+.body__card_back p {
+  margin-top: 20px;
+  font-size: 16px;
 }
 
-.body__card_back input{
-    padding: 10px 40px;
-    margin-top: 30px;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    color: white;
-    background: var(--primary-color);
-    box-shadow: 1px 1px 30px -5px #f54d4d;
-    border-radius: 10px;
-    transition: 600ms;
+.body__card_back .button {
+  padding: 10px 40px;
+  margin-top: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 10px;
+  transition: 600ms;
+  display: block;
 }
 
-.body__card_back input:hover{
-    box-shadow: 1px 1px 30px -5px #f54d4d;
+.body__card_back .button:hover {
+  box-shadow: 1px 1px 30px -5px #f54d4d;
 }
 
-.display{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
+.display {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
 }
 
-
-.click_me img{
-    width: 50px;
-    display: none;
+.click_me img {
+  width: 50px;
+  display: none;
 }
 /* Responsive */
 
 @media screen and (max-width: 768px) {
-    .container__card{
-        margin: auto;
-        perspective: 1000px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+  .container__card {
+    margin: auto;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    .click_me img{
-        display: inline;
-    }
+  .click_me img {
+    display: inline;
+  }
 }
